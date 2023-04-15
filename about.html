@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .about{
+    text-align: justify;
+    font-size: 12px;
+  }
+</style>
+<body bgcolor="#000">
+  <div class=" w3-container w3-bar w3-red  w3-xlarge">
+  <a target="_self" href="index.html" class="w3-bar-item w3-btn "><i class="fa fa-home"></i>
+  </a>
+    <a style="text-decoration:none;"href="#" class="w3-bar-item ">
+      <h1 style="font-size:14px;">Marshmellow</h1>
+  </a>
+     <a href="#" class="w3-bar-item w3-right" onclick="document.getElementById('id01').style.display='block'" ><i class="fa fa-bars"></i>
+  </a>
+
+</div>
+
+ <div style="width:100%; height:100vh; background:#111;" id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+        <div class="w3-bar-block w3-black">
+        <a href="#" class="w3-red w3-display w3-bar-item w3-button" onclick="document.getElementById('id01').style.display='none'">Home</a>
+        <a target="_self"href="contact.html" class="w3-black w3-bar-item w3-button">Contact</a>
+        <a target="_self"href="about.html" class="w3-black w3-bar-item w3-button">About</a>
+        <a href="#" class="w3-black w3-bar-item w3-button" onclick="myFunction('links')" class="w3-button w3-block w3-left-align">Adult</a>
+        
+        <div id="links" class="w3-hide w3-border">
+          <ul class="w3-ul">
+              <li>No Links Available Right Now</li>
+          </ul>  
+        </div>
+
+    </div>
+  </div>
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+
+</html>
